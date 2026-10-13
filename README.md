@@ -1,6 +1,6 @@
 # menuFood .github
 
-Arquivos padrão da organização **menuFood** no GitHub. Os modelos de issue em `ISSUE_TEMPLATE/` valem para todos os repositórios da organização que não têm `.github/ISSUE_TEMPLATE/` próprio.
+Arquivos padrão da organização **menuFood** no GitHub. Os modelos de issue em `.github/ISSUE_TEMPLATE/` valem para todos os repositórios da organização que não têm `.github/ISSUE_TEMPLATE/` próprio.
 
 | Modelo | Título | Labels |
 |---|---|---|
