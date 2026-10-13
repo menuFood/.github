@@ -1,0 +1,80 @@
+name: Relatório de Bug
+description: Registre um problema encontrado em algum projeto do menuFood.
+title: "[Bug]: "
+labels: ["bug", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reservar um tempo para preencher este relatório de bug!
+  - type: dropdown
+    id: projeto
+    attributes:
+      label: Projeto
+      description: Em qual projeto o problema acontece? O repositório indica onde a correção vai ser feita.
+      options:
+        - "Sistema: CMS / FoodInterface (repo menu_food)"
+        - "Sistema: Cardápio digital (repo menu_food)"
+        - "Sistema: API / FoodApi (repo menu_food)"
+        - "Sistema: Monitor de impressão (repo menu_food)"
+        - "Sistema: Site / Acompanhamento da entrega (repo menu_food)"
+        - "Bina: app Android (repo bina-app)"
+        - "Chama Garçom: gateway ESP32 ou Raspberry Pi (repo chama-garcom)"
+        - "Marketing (repo marketing)"
+        - "Não sei"
+    validations:
+      required: true
+  - type: input
+    id: cliente
+    attributes:
+      label: Cliente / tenant
+      description: Em qual cliente o problema apareceu, se for o caso.
+      placeholder: ex. demo
+    validations:
+      required: false
+  - type: input
+    id: contato
+    attributes:
+      label: Detalhes de contato
+      description: Como podemos entrar em contato com você se precisarmos de mais informações?
+      placeholder: ex. nome@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu?
+      description: Diga-nos também o que você esperava que acontecesse.
+      placeholder: diga-nos o que você vê!
+      value: "Ocorreu um bug!"
+    validations:
+      required: true
+  - type: textarea
+    id: como-reproduzir
+    attributes:
+      label: Como reproduzir
+      description: Passo a passo para o problema acontecer de novo.
+      placeholder: |
+        1. Abrir a tela ...
+        2. Clicar em ...
+        3. Ver o erro
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "### 📎 Anexos e logs"
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Navegador, celular e versão do Android, versão do Monitor ou do firmware do gateway, o que se aplicar.
+      placeholder: ex. Chrome no Windows / Android 14 / Monitor 1.4.2 / firmware 2.10.1
+    validations:
+      required: false
+  - type: textarea
+    id: registros
+    attributes:
+      label: Saída de log relevante
+      description: Copie e cole qualquer saída de log relevante ou arraste arquivos.
+      placeholder: Cole aqui a saída de log ou capturas de tela.
+      render: shell

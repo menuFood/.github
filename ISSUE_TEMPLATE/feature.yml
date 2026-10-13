@@ -1,0 +1,64 @@
+name: Nova Feature
+description: Proponha uma funcionalidade nova ou uma melhoria em algum projeto do menuFood.
+title: "[Feature] - "
+labels: ["enhancement", "triagem"]
+body:
+  - type: dropdown
+    id: projeto
+    attributes:
+      label: Projeto
+      description: Em qual projeto a feature vai ser feita? O repositório indica onde o trabalho vai acontecer.
+      options:
+        - "Sistema: CMS / FoodInterface (repo menu_food)"
+        - "Sistema: Cardápio digital (repo menu_food)"
+        - "Sistema: API / FoodApi (repo menu_food)"
+        - "Sistema: Monitor de impressão (repo menu_food)"
+        - "Sistema: Site / Acompanhamento da entrega (repo menu_food)"
+        - "Bina: app Android (repo bina-app)"
+        - "Chama Garçom: gateway ESP32 ou Raspberry Pi (repo chama-garcom)"
+        - "Marketing (repo marketing)"
+        - "Mais de um projeto"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema resolve?
+      description: A dor do cliente ou da operação que motiva a feature.
+      placeholder: ex. O garçom não sabe quais mesas já pediram a conta.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Como a feature deve funcionar. Telas, regras de negócio e exemplos ajudam.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: O que precisa estar funcionando para considerar a feature pronta.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: false
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências e anexos
+      description: Links, prints, exemplos de concorrentes ou arquivos.
+    validations:
+      required: false
