@@ -4,8 +4,8 @@ Arquivos padrão da organização **menuFood** no GitHub. Os modelos de issue em
 
 | Modelo | Título | Labels |
 |---|---|---|
-| `bug.yml` | `[Bug]: ` | `bug`, `triagem` |
-| `feature.yml` | `[Feature] - ` | `enhancement`, `triagem` |
+| `bug.yml` | `[Bug]: ` | `bug`, `triagem` (tipo Bug) |
+| `feature.yml` | `[Feature] - ` | `enhancement`, `triagem` (tipo Feature) |
 
 Os dois têm o campo obrigatório **Projeto**, que indica o repositório onde o trabalho vai ser feito (`menu_food`, `bina-app`, `chama-garcom` ou `marketing`). Ao incluir um projeto novo na organização, acrescente a opção nos dois modelos.
 

@@ -2,6 +2,7 @@ name: Relatório de Bug
 description: Registre um problema encontrado em algum projeto do menuFood.
 title: "[Bug]: "
 labels: ["bug", "triagem"]
+type: Bug
 body:
   - type: markdown
     attributes:

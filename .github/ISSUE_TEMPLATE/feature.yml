@@ -2,6 +2,7 @@ name: Nova Feature
 description: Proponha uma funcionalidade nova ou uma melhoria em algum projeto do menuFood.
 title: "[Feature] - "
 labels: ["enhancement", "triagem"]
+type: Feature
 body:
   - type: dropdown
     id: projeto
@@ -43,16 +44,6 @@ body:
       placeholder: |
         - [ ] ...
         - [ ] ...
-    validations:
-      required: false
-  - type: dropdown
-    id: prioridade
-    attributes:
-      label: Prioridade
-      options:
-        - Alta
-        - Média
-        - Baixa
     validations:
       required: false
   - type: textarea
